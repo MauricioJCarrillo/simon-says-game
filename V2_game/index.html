@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Simon Says Game</title>
+</head>
+<body>
+    <section id="modal" class="modal">
+        <section class="modal_container">
+            <label for="input_nivel_max">Ingresa el nivel de dificultad</label>
+            <input type="number" id="input_nivel_max">
+            <p id="mayor_a_zero"></p>
+            <button id="btnAcept" onclick="nivelMax()">Aceptar</button>
+        </section>
+    </section>
+    <header>
+        <input id="toggle-button" type="checkbox">
+        <label for="toggle-button">
+            <div class="sun-moon"></div>
+        </label>
+        Simon Says Game
+        <a href="../index.html">V1</a>
+    </header>
+    <main>
+        <section class="score_container">
+            <div class="levels_container">
+                <p>Niveles: </p>
+                <span id="nivel_max"></span>
+                <p>N° de nivel: </p>
+                <span id="num_level"></span>
+            </div>
+            <div class="score">
+                <p>Puntaje</p>
+                <span id="num_score"></span>
+            </div>
+        </section>
+        <section class="gameboard_container">
+            <div id="celeste" class="cuadro celeste" data-color="celeste"></div>
+            <div id="violeta" class="cuadro violeta" data-color="violeta"></div>
+            <div id="verde" class="cuadro verde" data-color="verde"></div>
+            <div id="naranja" class="cuadro naranja" data-color="naranja"></div>
+            <button id="btnEmpezar" class="btnEmpezar" onclick="empezarJuego()">GO!</button>
+        </section>
+    </main>
+    <footer>
+        <p id="paragraph_footer">Made with 💡 by <a href="https://github.com/MauricioJCarrillo/17.curso_de_fundamentos_de_javascript_2018_platzi">@MauricioJCarrillo</a></p>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

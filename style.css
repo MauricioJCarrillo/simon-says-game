@@ -18,11 +18,22 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     padding: 15px;
     text-align: center;
     font-size: 2rem;
     color: white;
     background-color: rgb(25, 25, 36);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffc107;
 }
 
 .gameboard {
